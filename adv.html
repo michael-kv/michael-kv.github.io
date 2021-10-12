@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Google Розширений пошук</title>
+  </head>
+  <body>
+    <header class="logo">
+      <img style="max-width: 15%" src="google.gif" alt="Google" />
+      <a href="index.html">Головна</a>
+    </header>
+    <div id="content" style="padding: 20px;">
+      <h1>Розширений пошук</h1>
+      <hr />
+    <div class="form">
+        <p>Знайти сторінки, що містять...</p>
+        <span></span>
+        <p>Як це зробити в полі пошуку</p>
+    </div>
+      <form class="form" action="https://google.com/search">
+        <label for="all-words">усі ці слова:</label> 
+        <input class="text-row" id="all-words" type="text" name="as_q">
+        <span>Введіть важливі слова: автомобіль BMW</span>
+        <label for="one-word">точне слово або фразу:</label>
+        <input class="text-row" id="one-word" type="text" name="as_epq">
+        <span>Візьміть точні слова в лапки: "BMW"</span>
+        <label for="anyone-word">будь-яке з цих слів:</label>
+        <input class="text-row" id="anyone-word" type="text" name="as_oq">
+        <span>Введіть OR між усіма потрібними словами: червоні OR чорні</span>
+        <label for="none-word">жодне з цих слів:</label>
+        <input class="text-row" id="none-word" type="text" name="as_eq">
+        <span>Поставте знак мінус перед небажаними словами: -SC, -"SC" </span>
+        <div></div>
+        <input id="s-btn" type="submit" value="Розширений пошук">
+    </form>
+    </div>
+  </body>
+</html>
